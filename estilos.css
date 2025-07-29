@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f4fb;
+  color: #4b2c66;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #6a4c93; /* morado pastel */
+  margin-bottom: 30px;
+}
+
+.ciclo {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 2px solid #bba6cf;
+  border-radius: 12px;
+  background-color: #f0e9f9;
+}
+
+.ciclo h2 {
+  margin-bottom: 15px;
+  color: #5a3d8a;
+}
+
+.materia {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background-color: #d9c7f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.materia:hover:not(.bloqueada) {
+  background-color: #c6b0e8;
+}
+
+.materia.aprobada {
+  background-color: #9b79d9;
+  color: white;
+  font-weight: bold;
+}
+
+.materia.electiva {
+  background-color: #f3d9f5;
+  font-style: italic;
+}
+
+.materia.bloqueada {
+  pointer-events: none;
+  opacity: 0.45;
+  background-color: #e6e0f5;
+  color: #a399b7;
+  cursor: default;
+}
+
+.codigo {
+  font-weight: bold;
+}
+
+.uv {
+  font-size: 0.9em;
+  color: #6d549e;
+  float: right;
+}
+
+.nombre {
+  margin: 6px 0;
+  font-size: 1.1em;
+}
+
+.tipo {
+  font-size: 0.9em;
+  color: #6d549e;
+  font-style: italic;
+}
